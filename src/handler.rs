@@ -56,7 +56,7 @@ pub async fn gets_by_tag(db: web::Data<Repository>, tag: web::Path<String>) -> i
 
 
 #[get("/search/{text}")]
-pub async fn find(db: web::Data<Repository>, text: web::Path<String>) -> impl Responder {
+pub async fn search(db: web::Data<Repository>, text: web::Path<String>) -> impl Responder {
     match db.search(text.into_inner()).await {
         Ok(res) => {
             HttpResponse::Ok().json(dto::Movie::new_list(res))
