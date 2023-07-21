@@ -1,5 +1,5 @@
 # darkapp
-movies store crud with darkbird + actix-web
+movie store crud with darkbird + actix-web
 
 darkbird is realtime in-memory document oriented 
 also increase productivity speed,  
