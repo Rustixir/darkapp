@@ -1,0 +1,18 @@
+[package]
+name = "darktest"
+version = "0.1.0"
+edition = "2021"
+authors = ["DanyalMhai@gmail.com"]
+readme = "README.md"
+description = "movies store service with darkbird + actix-web"
+keywords = ["crud", "example", "darkbird", "actix_web", "in-memory"]
+homepage   = "https://github.com/Rustixir/darkapp"
+repository = "https://github.com/Rustixir/darkapp"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+darkbird = "6.1.8"
+serde = "1.0.174"
+tokio = {version="1.29", features=["full"]}
+actix-web = "4"
