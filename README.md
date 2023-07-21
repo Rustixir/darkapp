@@ -1,2 +1,5 @@
 # darkapp
-movies store app with darkbird + actix-web 
+movies store service with darkbird + actix-web
+
+darkbird is realtime in-memory document oriented 
+also increase productivity speed,  see this crud service
