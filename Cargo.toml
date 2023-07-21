@@ -15,4 +15,4 @@ repository = "https://github.com/Rustixir/darkapp"
 darkbird = "6.1.8"
 serde = "1.0.174"
 tokio = {version="1.29", features=["full"]}
-actix-web = "4"
+actix-web = {version="4", features=["full"]}
