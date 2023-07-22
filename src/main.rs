@@ -14,12 +14,12 @@ use repo::Repository;
 async fn main() -> std::io::Result<()> {
     
     let repo =  Repository::new().await;
-    let counter = web::Data::new(report);
+    let web_data = web::Data::new(repo);
 
     HttpServer::new(move || {
         // move counter into the closure
         App::new()
-            .app_data(counter.clone()) 
+            .app_data(web_data) 
             .service(
                 web::scope("/movies")
                     .service(handler::add)
